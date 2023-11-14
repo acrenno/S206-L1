@@ -1,0 +1,129 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 1,
+    "failures": 0,
+    "start": "2023-11-14T01:31:34.166Z",
+    "end": "2023-11-14T01:31:35.108Z",
+    "duration": 942,
+    "testsRegistered": 2,
+    "passPercent": 0,
+    "pendingPercent": 50,
+    "other": 1,
+    "hasOther": true,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "2cc63a7c-6e33-49cb-87c7-c17b87ed1abb",
+      "title": "",
+      "fullFile": "cypress\\e2e\\exemplo1.cy.js",
+      "file": "cypress\\e2e\\exemplo1.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "570d6e39-e804-43f8-a180-5a0817bdb75a",
+          "title": "Criando cenario de teste para o site globalsqa",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Caso de teste: Registrar um usuario no site com sucesso",
+              "fullTitle": "Criando cenario de teste para o site globalsqa Caso de teste: Registrar um usuario no site com sucesso",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "cy.visit('https://globalsqa.com/angularJs-protractor/registration-login-example/#/login');\ncy.get('.btn-link').click();\ncy.get('#firstName').type('anna');\ncy.get('#TEST1').type('anna');\ncy.get('#username').type('anna');\ncy.get('#password').type('aninha');\ncy.get('.btn-primary').click();\ncy.get('.ng-binding').should('contain.text', 'Registration successful');",
+              "err": {},
+              "uuid": "dde2bba5-9be4-4470-a5c5-2553f0a824bb",
+              "parentUUID": "570d6e39-e804-43f8-a180-5a0817bdb75a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Caso de teste: Registrar um usuario no site com sucesso",
+              "fullTitle": "Criando cenario de teste para o site globalsqa Caso de teste: Registrar um usuario no site com sucesso",
+              "timedOut": null,
+              "duration": 735,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"\\\\exemplo1.cy.js\\\\Criando cenario de teste para o site globalsqa -- Caso de teste Registrar um usuario no site com sucesso (failed).png\"\n    ]\n  ]\n}",
+              "code": "let info = criarusuario();\ncy.get('#username').type(info[0]);\ncy.get('#password').type(info[1]);",
+              "err": {
+                "message": "TypeError: Cannot read properties of undefined (reading '0')",
+                "estack": "TypeError: Cannot read properties of undefined (reading '0')\n    at Context.eval (webpack://testes/./cypress/e2e/exemplo1.cy.js:34:34)",
+                "diff": null
+              },
+              "uuid": "25ba343d-2284-4787-a029-3acab1fdc232",
+              "parentUUID": "570d6e39-e804-43f8-a180-5a0817bdb75a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "25ba343d-2284-4787-a029-3acab1fdc232"
+          ],
+          "pending": [
+            "dde2bba5-9be4-4470-a5c5-2553f0a824bb"
+          ],
+          "skipped": [],
+          "duration": 735,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

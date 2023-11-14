@@ -1,0 +1,209 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 6,
+    "passes": 4,
+    "pending": 0,
+    "failures": 2,
+    "start": "2023-11-14T01:18:36.942Z",
+    "end": "2023-11-14T01:19:41.536Z",
+    "duration": 64594,
+    "testsRegistered": 6,
+    "passPercent": 66.66666666666666,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "60be6e69-fa44-4cf9-bc67-60abff4a8eff",
+      "title": "",
+      "fullFile": "cypress\\e2e\\TrabalhoUI\\trabalho.cy.js",
+      "file": "cypress\\e2e\\TrabalhoUI\\trabalho.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "dd6f2e5e-251e-4ad9-b713-0b5de5e9de51",
+          "title": "Ver se funcoes basicas da AMAZON estao dando certo",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Caso de teste: Pesquisar algo inexistente",
+              "fullTitle": "Ver se funcoes basicas da AMAZON estao dando certo Caso de teste: Pesquisar algo inexistente",
+              "timedOut": null,
+              "duration": 6750,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://www.amazon.com.br');\ncy.get('#twotabsearchtextbox').click().type('hstegdns');\ncy.get('#nav-search-submit-button').click();\ncy.get('#nav-search-submit-button').click();\ncy.get('.s-no-outline > .a-size-base > span').should('contain.text', 'Tente verificar a ortografia ou usar termos mais genéricos');",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `#twotabsearchtextbox`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `#twotabsearchtextbox`, but never found it.\n    at Context.eval (webpack://testes/./cypress/e2e/TrabalhoUI/trabalho.cy.js:8:9)",
+                "diff": null
+              },
+              "uuid": "3dcade96-6b8f-406e-b0b4-0fcf4ba6b295",
+              "parentUUID": "dd6f2e5e-251e-4ad9-b713-0b5de5e9de51",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Caso de teste: Fazendo um login com um email inexistente",
+              "fullTitle": "Ver se funcoes basicas da AMAZON estao dando certo Caso de teste: Fazendo um login com um email inexistente",
+              "timedOut": null,
+              "duration": 8816,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://www.amazon.com.br');\ncy.get('#nav-link-accountList').click();\ncy.get('#ap_email').click().type('jogadorcaro@ina.br');\ncy.get('.a-button-inner > #continue').click();\ncy.get('.a-list-item').should('contain.text', 'Não encontramos uma conta associada a este endereço de e-mail');",
+              "err": {},
+              "uuid": "9b652851-fb16-42a2-8579-3da0bf859117",
+              "parentUUID": "dd6f2e5e-251e-4ad9-b713-0b5de5e9de51",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Caso de teste: Entrar com um cep",
+              "fullTitle": "Ver se funcoes basicas da AMAZON estao dando certo Caso de teste: Entrar com um cep",
+              "timedOut": null,
+              "duration": 11706,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://www.amazon.com.br');\ncy.get('#nav-global-location-popover-link').click();\ncy.get('#GLUXZipUpdateInput_0').click().type('37540');\ncy.get('#GLUXZipUpdateInput_1').click().type('000');\ncy.get('#GLUXZipUpdate').click();\ncy.get('#nav-global-location-popover-link').should('contain.text', '\\n            \\n            \\n                \\n                   Enviar para\\n                \\n                \\n                    37540000‌\\n                \\n            \\n        ');",
+              "err": {},
+              "uuid": "d8c59ead-92fe-4a2c-979f-5ccf6647bebe",
+              "parentUUID": "dd6f2e5e-251e-4ad9-b713-0b5de5e9de51",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Caso de teste: Pesquisar por ventilador",
+              "fullTitle": "Ver se funcoes basicas da AMAZON estao dando certo Caso de teste: Pesquisar por ventilador",
+              "timedOut": null,
+              "duration": 5871,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://www.amazon.com.br');\ncy.get('#twotabsearchtextbox').click().type('ventilador');\ncy.get('#nav-search-submit-button').click();\ncy.get('#nav-search-submit-button').click();\ncy.get('.a-link-normal > .a-row > .a-color-base').should('contain.text', 'Confira nossas promoções em Ventiladores');",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `#twotabsearchtextbox`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `#twotabsearchtextbox`, but never found it.\n    at Context.eval (webpack://testes/./cypress/e2e/TrabalhoUI/trabalho.cy.js:43:11)",
+                "diff": null
+              },
+              "uuid": "1a77fe9c-d4b4-49af-b71d-2f1781f6969f",
+              "parentUUID": "dd6f2e5e-251e-4ad9-b713-0b5de5e9de51",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Caso de teste: Pesquisar por cadeira gamer",
+              "fullTitle": "Ver se funcoes basicas da AMAZON estao dando certo Caso de teste: Pesquisar por cadeira gamer",
+              "timedOut": null,
+              "duration": 17015,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://www.amazon.com.br');\ncy.get('#twotabsearchtextbox').click().type('cadeira gamer');\ncy.get('#nav-search-submit-button').click();\ncy.get('#nav-search-submit-button').click();\ncy.get('.s-no-outline > .a-row > .a-size-base').should('contain.text', 'O preço e outros detalhes variam de acordo com o tamanho e a cor do produto.');",
+              "err": {},
+              "uuid": "8e1b9601-8cc1-4b8d-a71e-f0a759d7c1d5",
+              "parentUUID": "dd6f2e5e-251e-4ad9-b713-0b5de5e9de51",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Caso de teste: Fazendo um login com um email inexistente mas senha errada",
+              "fullTitle": "Ver se funcoes basicas da AMAZON estao dando certo Caso de teste: Fazendo um login com um email inexistente mas senha errada",
+              "timedOut": null,
+              "duration": 10406,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://www.amazon.com.br');\ncy.get('#nav-link-accountList').click();\ncy.get('#ap_email').click().type('annaclararenno@gmail.com');\ncy.get('.a-button-inner > #continue').click();\ncy.get('#ap_password').click().type('00000000');\ncy.get('#signInSubmit').click();\ncy.get('.a-list-item').should('contain.text', 'Sua senha está incorreta');",
+              "err": {},
+              "uuid": "8478c1ad-b383-4082-a62d-2f179395edfd",
+              "parentUUID": "dd6f2e5e-251e-4ad9-b713-0b5de5e9de51",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "9b652851-fb16-42a2-8579-3da0bf859117",
+            "d8c59ead-92fe-4a2c-979f-5ccf6647bebe",
+            "8e1b9601-8cc1-4b8d-a71e-f0a759d7c1d5",
+            "8478c1ad-b383-4082-a62d-2f179395edfd"
+          ],
+          "failures": [
+            "3dcade96-6b8f-406e-b0b4-0fcf4ba6b295",
+            "1a77fe9c-d4b4-49af-b71d-2f1781f6969f"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 60564,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
