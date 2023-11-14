@@ -1,3 +1,4 @@
+/*
 /// <reference types = "cypress"/>
 
 describe('Criando cenario de teste para o site globalsqa',()=>{
@@ -13,7 +14,7 @@ describe('Criando cenario de teste para o site globalsqa',()=>{
     cy.get('.ng-binding').should('contain.text', 'Registration successful')
   })
 
-  /*
+  
   it.skip ('Caso de teste: Registrar um usuario no site sem sucesso', ()=>{
     cy.visit('https://globalsqa.com/angularJs-protractor/registration-login-example/#/register')
   
@@ -26,7 +27,7 @@ describe('Criando cenario de teste para o site globalsqa',()=>{
     cy.get('.btn-primary').should('be.disabled')
    
   })
-  */
+  
 
   it ('Caso de teste: Registrar um usuario no site com sucesso', ()=>{
    
@@ -55,4 +56,7 @@ let usuarioInfo = [user,senha]
   cy.get('.btn-primary').click()
   cy.get('.ng-binding').should('contain.text', 'Registration successful')
 
-}
+  
+
+})
+*/

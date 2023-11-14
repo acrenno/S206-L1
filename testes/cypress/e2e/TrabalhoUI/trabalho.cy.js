@@ -59,7 +59,7 @@ describe('Ver se funcoes basicas da AMAZON estao dando certo',() => {
   
       })
 
-      it('Caso de teste: Fazendo um login com um email iexistente mas senha errada',()=>{
+      it('Caso de teste: Fazendo um login com um email inexistente mas senha errada',()=>{
 
         cy.visit('https://www.amazon.com.br')
         cy.get('#nav-link-accountList').click()
