@@ -1,0 +1,25 @@
+
+Repositório para a entrega do exercício de S206.
+Aluna: Anna Clara Mendes Siqueira Rennó
+Curso: GES
+Matrícula: 250
+
+
+O site utilizado foi da Amazon, para a realização dos testes solicitados.
+
+ - 1: Buscar por algo inexistente no site - escrevendo algo aleatorio e retornando mensagem requerindo ortografia correta.
+
+ - 2: Login com um email inexistente - coloquei um email aleatorioapra verificar mensagem de saida.
+
+ - 3: Teste de entrada com um cep existente.
+
+ - 4: fazendo pesquisa, e procurando resultados de ventilador.
+ 
+ - 5: fazendo pesquisa, e procurando resultados de cadeira gamer.
+
+ - 6: fazendo um login de um email existente (o meu proprio), porem com uma senha errada e lendo o erro gerado.
+
+
+Devido a pagina da amazon mudar de estética a cada refresh, tendo uma pagina inicial aleatorio, certos testes podem nao funcionar, mas rodando de novo, a chance de rodar é alta.
+Nao consegui gerar relatorio devido a nao excelencia de todos os testes de uma vez
+
