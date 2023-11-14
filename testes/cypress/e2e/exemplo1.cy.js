@@ -29,11 +29,11 @@ describe('Criando cenario de teste para o site globalsqa',()=>{
   */
 
   it ('Caso de teste: Registrar um usuario no site com sucesso', ()=>{
-   [
+   
     let info = criarusuario()
     cy.get('#username').type(info[0])
     cy.get('#password').type(info[1])
-   ]
+   
   })
 
 })
@@ -51,7 +51,7 @@ let usuarioInfo = [user,senha]
   cy.get('#firstName').type(user)
   cy.get('#TEST1').type(user)
   cy.get('#username').type(user)
-  cy.get('#password').type(senhas)
+  cy.get('#password').type(senha)
   cy.get('.btn-primary').click()
   cy.get('.ng-binding').should('contain.text', 'Registration successful')
 
